@@ -32,7 +32,7 @@ public partial class QuizzService : IQuizzService
             return new("Description is invalid");
         
         if(string.IsNullOrWhiteSpace(passWord))
-            return new("PassWord is invalid");
+            return new("Password is invalid");
         
         var quizzEntity = new Entities.Quizz(name, description,passWord,startTime,endTime);
 
